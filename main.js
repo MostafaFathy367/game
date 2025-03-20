@@ -1,16 +1,30 @@
-document.querySelector(".control-button span").onclick = function () {
-  let   yourName = prompt("Whats Your Name?");
+const controlButton = document.querySelector('.control-button span');
 
-  if (yourName == null || yourName == "") {
-    document.querySelector(".name span").innerHTML = 'Unknown';
-  } else{
-    document.querySelector(".name span").innerHTML = yourName;
-  }
-  document.querySelector(".control-button").remove();
-};
-
+function generateCards() {
+  const cards = [
+    {dataAnimal: 'camel', imageSrc: 'images/camel.jpg'},
+    {dataAnimal: 'cat', imageSrc: 'images/cat.jpg'},
+    {dataAnimal: 'deer', imageSrc: 'images/Deer.jpg'},
+    {dataAnimal: 'dog', imageSrc: 'images/dog.jpg'},
+    {dataAnimal: 'goat', imageSrc: 'images/goat.jpg'},
+    {dataAnimal: 'horse', imageSrc: 'images/horse.jpg'},
+    {dataAnimal: 'kangaroo', imageSrc: 'images/kangaroo.jpg'},
+    {dataAnimal: 'leopard', imageSrc: 'images/Leopard.jpg'},
+    {dataAnimal: 'lion', imageSrc: 'images/lion.jpg'},
+    {dataAnimal: 'Penguin', imageSrc: 'images/Penguin.jpg'},
+  ];
+  cards.forEach(card => {
+    blocksContainer.innerHTML += `<div class="game-block" data-animal="${card.dataAnimal}">
+      <div class="face front"></div>
+      <div class="face back">
+        <img src="${card.imageSrc}" alt="${card.dataAnimal}">
+      </div>
+    </div>`.repeat(2);
+  })
+}
 let duration = 1000;
 let blocksContainer = document.querySelector(".memory-game-blocks");
+generateCards()
 let blocks = Array.from(blocksContainer.children);
 let orderRange = [...Array(blocks.length).keys()];
 
@@ -70,7 +84,7 @@ function checkMatchedBlocks (firstBlock, secondBlock) {
 
   } else {
 
-    triesElement.innerHTML = parseInt(triesElement.innerHTML) + 1;
+    triesElement.innerHTML = +triesElement.innerHTML + 1;
 
     setTimeout(() => {
 

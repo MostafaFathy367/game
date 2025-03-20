@@ -1,189 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Game2</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="control-button">
-    <span>Start Game</span>
-  </div>
-  <!-- Start Info Container -->
-  <div class="info-container">
-    <div class="name">
-      Hello : <span></span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="control-button">
+      <span>Start Game</span>
     </div>
-    <div class="tries">
-      Wrong Tries : <span>0</span>
+    <!-- Start Info Container -->
+    <div class="info-container">
+      <div class="name">Hello : <span></span></div>
+      <div class="tries">Wrong Tries : <span>0</span></div>
     </div>
-  </div>
-  <!-- End Info Container -->
-  <!-- Start Game Blocks Container -->
-  <div class="memory-game-blocks">
-    <!-- Start Block -->
-    <div class="game-block" data-animal="camal">
-      <div class="face front"></div>
-      <div class="face back">
-        <img src="images/camal.jpg" alt="camal">
-      </div>
-    </div>
-    <!-- End Block -->
-    <!-- Start Block -->
-    <div class="game-block" data-animal="camal">
-      <div class="face front"></div>
-      <div class="face back">
-        <img src="images/camal.jpg" alt="camal">
-      </div>
-    </div>
-    <!-- End Block -->
-    <!-- Start Block -->
-    <div class="game-block" data-animal="cat">
-      <div class="face front"></div>
-      <div class="face back">
-        <img src="images/cat.jpg" alt="cat">
-      </div>
-    </div>
-    <!-- End Block -->
-    <!-- Start Block -->
-    <div class="game-block" data-animal="cat">
-      <div class="face front"></div>
-      <div class="face back">
-        <img src="images/cat.jpg" alt="cat">
-      </div>
-    </div>
-    <!-- End Block -->
-    <!-- Start Block -->
-    <div class="game-block" data-animal="deer">
-      <div class="face front"></div>
-      <div class="face back">
-        <img src="images/Deer.jpg" alt="Deer">
-      </div>
-    </div>
-    <!-- End Block -->
-    <!-- Start Block -->
-    <div class="game-block" data-animal="deer">
-      <div class="face front"></div>
-      <div class="face back">
-        <img src="images/Deer.jpg" alt="Deer">
-      </div>
-    </div>
-    <!-- End Block -->
-    <!-- Start Block -->
-    <div class="game-block" data-animal="dog">
-      <div class="face front"></div>
-      <div class="face back">
-        <img src="images/dog.jpg" alt="Dog">
-      </div>
-    </div>
-    <!-- End Block -->
-    <!-- Start Block -->
-    <div class="game-block" data-animal="dog">
-      <div class="face front"></div>
-      <div class="face back">
-        <img src="images/dog.jpg" alt="Dog">
-      </div>
-    </div>
-    <!-- End Block -->
-    <!-- Start Block -->
-    <div class="game-block" data-animal="goat">
-      <div class="face front"></div>
-      <div class="face back">
-        <img src="images/goat.jpg" alt="Goat">
-      </div>
-    </div>
-    <!-- End Block -->
-    <!-- Start Block -->
-    <div class="game-block" data-animal="goat">
-      <div class="face front"></div>
-      <div class="face back">
-        <img src="images/goat.jpg" alt="Goat">
-      </div>
-    </div>
-    <!-- End Block -->
-    <!-- Start Block -->
-    <div class="game-block" data-animal="horse">
-      <div class="face front"></div>
-      <div class="face back">
-        <img src="images/horse.jpg" alt="Horse">
-      </div>
-    </div>
-    <!-- End Block -->
-    <!-- Start Block -->
-    <div class="game-block" data-animal="horse">
-      <div class="face front"></div>
-      <div class="face back">
-        <img src="images/horse.jpg" alt="Horse">
-      </div>
-    </div>
-    <!-- End Block -->
-    <!-- Start Block -->
-    <div class="game-block" data-animal="kangaroo">
-      <div class="face front"></div>
-      <div class="face back">
-        <img src="images/kangaroo.jpg" alt="Kangaroo">
-      </div>
-    </div>
-    <!-- End Block -->
-    <!-- Start Block -->
-    <div class="game-block" data-animal="kangaroo">
-      <div class="face front"></div>
-      <div class="face back">
-        <img src="images/kangaroo.jpg" alt="Kangaroo">
-      </div>
-    </div>
-    <!-- End Block -->
-    <!-- Start Block -->
-    <div class="game-block" data-animal="leopard">
-      <div class="face front"></div>
-      <div class="face back">
-        <img src="images/Leopard.jpg" alt="Leopard">
-      </div>
-    </div>
-    <!-- End Block -->
-    <!-- Start Block -->
-    <div class="game-block" data-animal="leopard">
-      <div class="face front"></div>
-      <div class="face back">
-        <img src="images/Leopard.jpg" alt="Leopard">
-      </div>
-    </div>
-    <!-- End Block -->
-    <!-- Start Block -->
-    <div class="game-block" data-animal="lion">
-      <div class="face front"></div>
-      <div class="face back">
-        <img src="images/lion.jpg" alt="Lion">
-      </div>
-    </div>
-    <!-- End Block -->
-    <!-- Start Block -->
-    <div class="game-block" data-animal="lion">
-      <div class="face front"></div>
-      <div class="face back">
-        <img src="images/lion.jpg" alt="Lion">
-      </div>
-    </div>
-    <!-- End Block -->
-    <!-- Start Block -->
-    <div class="game-block" data-animal="penguin">
-      <div class="face front"></div>
-      <div class="face back">
-        <img src="images/Penguin.jpg" alt="Penguin">
-      </div>
-    </div>
-    <!-- End Block -->
-    <!-- Start Block -->
-    <div class="game-block" data-animal="penguin">
-      <div class="face front"></div>
-      <div class="face back">
-        <img src="images/Penguin.jpg" alt="Penguin">
-      </div>
-    </div>
-    <!-- End Block -->
-  </div>
-  <!-- End Game Blocks Container -->
-  <script src="main.js"></script>
-</body>
+    <!-- End Info Container -->
+    <!-- Start Game Blocks Container -->
+    <div class="memory-game-blocks"></div>
+    <!-- End Game Blocks Container -->
+     <div class="game-result">
+      <p>Congratulation You Fond All Cards</p>
+     </div>
+    <script src="main.js"></script>
+  </body>
 </html>
