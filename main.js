@@ -95,6 +95,8 @@ function checkMatchedBlocks (firstBlock, secondBlock) {
 
   }
 
+  checkIsGameEnd();
+
 }
 
 function shuffel(array) {
@@ -110,4 +112,24 @@ function shuffel(array) {
     array[random] = temp;
   }
   return array;
+}
+
+controlButton.addEventListener('click', () => {
+  let   yourName = prompt("Whats Your Name?");
+
+  if (yourName == null || yourName == "") {
+    document.querySelector(".name span").innerHTML = 'Unknown';
+  } else{
+    document.querySelector(".name span").innerHTML = yourName;
+  }
+  document.querySelector(".control-button").remove();
+  blocks.forEach(block => {
+    block.classList.add('start-flip')
+  })
+  stopClicking();
+})
+
+function checkIsGameEnd() {
+  const gameResult = document.querySelector('.game-result');
+  blocks.every(block => block.classList.contains('has-match')) && gameResult.classList.add('is-end')
 }
