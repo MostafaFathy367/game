@@ -2,7 +2,7 @@
 
 ## Screenshot
 
-![Screenshot Description](https://drive.google.com/file/d/1Y6JBWspt7Sr3K6P4Zc-GpMJRQyNatQOl/view?usp=sharing)
+![Screenshot Description](./images/game.png)
 
 ## Description
 This is a game project. It includes various features and functionalities to provide an engaging gaming experience.
