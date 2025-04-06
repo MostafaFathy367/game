@@ -2,7 +2,7 @@
 
 ## Screenshot
 
-![Screenshot Description](C:\Users\aaaa\Pictures\game.png)
+![Screenshot Description](../game.png)
 
 ## Description
 This is a game project. It includes various features and functionalities to provide an engaging gaming experience.
